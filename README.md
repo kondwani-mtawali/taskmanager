@@ -1,14 +1,12 @@
 # TaskManager
 
-**TaskManager** is a full-stack task management web application built using **Django REST Framework (DRF)** on the backend and **React.js** on the frontend. The project supports both personal and group-based task management with an accessible and responsive user interface.
-
-This application was developed for an application development course project and showcases core CRUD functionality, dynamic filtering, and visual task representation.
+**TaskManager** is my attempt at a full-stack task management web application built using Django REST Framework (DRF) on the backend and React.js on the frontend. The project supports personal task creation, editing, deletion, group-based task tracking, and user-friendly visual components. It was developed for an application development project and contains basic features
 
 ---
 
-## 🔧 Features
+## Features
 
-### 🗂️ Tasks
+### Tasks
 
 - Create tasks with:
   - Title, description, and due date
@@ -21,14 +19,14 @@ This application was developed for an application development course project and
 - Edit tasks inline
 - Delete tasks by ID
 
-### 👥 Group Tasks
+### Group Tasks
 
 - Create and view task groups
 - Assign participants to groups (stored as comma-separated strings)
 - Manually assign tasks to groups (via comma-separated task IDs or names)
 - Expand/collapse task lists for each group
 
-### 🎨 UI/UX
+### UI/UX
 
 - Fully responsive layout with custom CSS
 - Accessible, clearly labeled form inputs
@@ -44,14 +42,29 @@ This application was developed for an application development course project and
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### Backend (Django + DRF)
 
 1. Navigate to the `backend/` directory:
    ```bash
    cd backend/
-   
+   python -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt  # If requirements file exists
+    python manage.py migrate
+    python manage.py runserver
+
+### Frontend (React)
+2. Navigate to `frontend/` directory:
+    ```bash
+    cd frontend/
+    npm install
+    npm run dev
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
