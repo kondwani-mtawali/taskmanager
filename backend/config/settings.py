@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'taskmanager',
+    'rest_framework.authtoken',
+
 ]
 
 MIDDLEWARE = [
@@ -54,6 +56,16 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 
 ]
+
+#Setting Defaults for user authentication
+# REST_FRAMEWORK = { 
+#     'DEFAULT_AUTHENTICATION_CLASSES': [
+#         'rest_framework.authentication.TokenAuthentication',
+#     ],
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.IsAuthenticated',
+#     ]
+# }
 
 CORS_ALLOW_ALL_ORIGINS = True
 
