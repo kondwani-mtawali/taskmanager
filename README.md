@@ -62,6 +62,10 @@
     npm install
     npm run dev
 
+### Author
+- Kondwani Mtawali | kmtawali8@gmail.com
+- Concordia University Nebraska
+
 
 
 
